@@ -18,12 +18,12 @@ class QuotesSpider(scrapy.Spider):
         c_name = response.css('h1.header-hero__title::text').getall()
         c_description = response.css('p.course__description::text').getall()
         for name in c_name:
-            with open("abc1.txt","a+") as f:
+            with open("Courses.txt","a+") as f:
                 f.write(name+"\t:\n")
         for des in c_description:
-            with open("abc1.txt", "a+") as f:
+            with open("Courses.txt", "a+") as f:
                 f.write(des)
-        with open("abc1.txt", "a") as f:
+        with open("Courses.txt", "a") as f:
             f.write('\n\n\n\n')
                 
             
