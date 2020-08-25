@@ -21,4 +21,4 @@ In this model I used python and scrapy which is a python module to buil the mode
 How to use:-
 To use this model you just have to download the saurce code and then run the python script in your preferred IDE and it will extract the data and store it in a text file which it will create itself. If you want to extract the dats of different technologies courses as in this model i have scraped the data for python courses then you just have to change the start url with the preferred one i.e the url of some other programming language courses.
 
-It conatains two spiders one named "Chapters" which extracts the name of the courses and the chapters included in it and the other named "Description" so you can use whichever you  want or need.
+It conatains two spiders one named "Chapters" which extracts the name of the courses and the chapters included in it and the other named "Description" which extracts name of the courses and thier description, So you can use whichever you  want or need.
