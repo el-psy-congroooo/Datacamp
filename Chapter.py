@@ -6,11 +6,11 @@ class ChaptersSpider(scrapy.Spider):
     name = 'chapters'
 
     def start_requests(self):
-        url = "https://www.datacamp.com/courses/tech:python"
+        url = "https://www.datacamp.com/search"
         yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
-        c_link = response.css("div.course-block>a::attr(href)").getall()
+        c_link = response.css("div.dc-global-search-result__content>a::attr(href)").getall()
         for link in c_link:
             yield response.follow(url=link, callback=self.parse1)
 
